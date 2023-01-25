@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POP-PUP</title>
+    <link rel="stylesheet" href="stlye.css">
+</head>
+<body>
+    <div class="container">
+        <button onclick="openPopup()" class="button">SUBMIT</button>
+        <div class="box" id="box">
+          <img src="404-tick.png" id="logo">
+          <h1>Thank You!</h1>
+          <p>Your details has been sucessfully submitted.
+            Thankyou
+          </p>
+          <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+    <script>
+      let popup =document.getElementById("box");
+      function openPopup()
+      {
+        popup.classList.add("open-popup");
+      }
+      function closePopup()
+      {
+        popup.classList.remove("open-popup");
+      }
+    </script>
+</body>
+</html>
